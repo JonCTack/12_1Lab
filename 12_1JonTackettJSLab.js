@@ -1,4 +1,11 @@
-//B. (but it's the start point)
+//A.
+// 1. we can use commands such as "let"
+// 2. we can use "="
+// 3. we can assign with "="
+// 4. declare is creating a variable, assign is giving a value to a variable, and define is giving input to a variable or function, or ensuring it's not undefined 
+// 5. pseudocoding is labeling the steps neceissary in a code in simple writing such as "first, we need to compare the values"
+// 6. the large percentage should be spent thinking instead of typing it
+//B. 
 let firstVariable = "Hello World"
 firstVariable = 6
 let secondVariable = firstVariable
@@ -30,4 +37,12 @@ if (animal == cow){
     console.log("mooooo")
 } else {
     console.log("Hey! You're not a cow!")
+}
+//E.
+const personAge = 77
+if (personAge >= 16){
+  console.log("Here are the keys!")
+} else if (personAge < 16){
+//this conditional is not necissary but I want to be sure to follow the directions
+  console.log("Sorry, you're too young.")
 }
