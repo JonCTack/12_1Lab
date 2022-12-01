@@ -33,7 +33,7 @@ const a = 4;
   console.log(48 == '48');
 //D.
 let animal = "cow"
-if (animal == cow){
+if (animal == "cow"){
     console.log("mooooo")
 } else {
     console.log("Hey! You're not a cow!")
@@ -46,3 +46,38 @@ if (personAge >= 16){
 //this conditional is not necissary but I want to be sure to follow the directions
   console.log("Sorry, you're too young.")
 }
+//II
+//A.
+for(let i = 0; i < 11; i++){
+  console.log(i)
+}
+// for(let i = 10; i < 401; i++){
+//   console.log(i)
+// }
+// for(let i = 4; i < 1334; i++){
+//   console.log(i*3)
+// }
+//commented out just because their output is so large, will uncomment later
+//B.
+for(let i = 1; i < 101; i++){
+  if(i%2 == 0){
+    console.log(i + "<-- is an even number")
+  } else {
+  console.log(i)
+}
+}
+//C.
+for(let i = 0; i < 101; i++){
+  if(i%5 == 0 && i != 0){
+    console.log(`I found a ${i}. High five!`)
+  }
+}
+for(let i = 0; i < 101; i++){
+  if(i%5 == 0 && i != 0){
+    console.log(`I found a ${i}. High five!`)
+  }
+  if(i%3 == 0 && i != 0){
+    console.log(`I found a ${i}. Three is a crowd`)
+  }
+}
+//D.
