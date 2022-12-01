@@ -102,3 +102,76 @@ quotes = ["these",
 "are",
 "quotes"]
 //C.
+const randomThings = [1, 10, "Hello", true]
+randomThings[0]
+randomThings[2] = "World"
+console.log(randomThings[2])
+//D.
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+ourClass[2]
+ourClass[4] = "Octocat"
+ourClass.push("Cloud City")
+//E.
+const myArray = [5, 10, 500, 20]
+myArray.push("Aegon","another string of my choice")
+myArray.shift()
+myArray.unshift("Bob Marley")
+myArray.pop()
+myArray.reverse()
+//I did mutate the array. Mutate means change the original. It returns a reference to the array
+//F.
+let variableForSectionF = 1
+if (variableForSectionF < 100){
+  console.log("little number")
+} else if (variableForSectionF >= 100){
+  console.log("big number")
+}
+//G.
+if (variableForSectionF < 5){
+  console.log("little number")
+} else if (variableForSectionF > 10){
+  console.log("big number")
+} else {
+  console.log("monkey")
+}
+//H.
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
+kristynsCloset.splice(6,0,"raybans")
+kristynsCloset[5] = "stained knit hat"
+thomsCloset[0][0]
+thomsCloset[1][0]
+thomsCloset[2][0]
+console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}!`)
+thomsCloset[1][2] = "Footie Pajamas"
+//IV
