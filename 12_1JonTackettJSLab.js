@@ -43,7 +43,7 @@ const personAge = 77;
 if (personAge >= 16){
   console.log("Here are the keys!");
 } else if (personAge < 16){
-//this conditional is not necissary but I want to be sure to follow the directions
+//this conditional is not necessary but I want to be sure to follow the directions
   console.log("Sorry, you're too young.");
 }
 //II
@@ -51,13 +51,12 @@ if (personAge >= 16){
 for(let i = 0; i < 11; i++){
   console.log(i);
 }
-// for(let i = 10; i < 401; i++){
-//   console.log(i);
-// }
-// for(let i = 4; i < 1334; i++){
-//   console.log(i*3);
-// }
-//commented out just because their output is so large, will uncomment later
+for(let i = 10; i < 401; i++){
+  console.log(i);
+}
+for(let i = 4; i < 1334; i++){
+  console.log(i*3);
+}
 //B.
 for(let i = 1; i < 101; i++){
   if(i%2 == 0){
