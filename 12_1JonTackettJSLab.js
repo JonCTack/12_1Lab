@@ -26,7 +26,7 @@ const a = 4;
   // FOR THE NEXT TWO, USE ONLY && OR ||
   console.log(true || false);
   console.log(false || false || false || false || false || true);
-  console.log(false == false)
+  console.log(false == false);
   console.log(e === 'Kevin');
   console.log(a + b == c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
   console.log(a * a == d); // note: the answer is a simple arithmetic equation, not something "weird"
@@ -84,13 +84,13 @@ let bank_account = 0;
 for(let i = 1; i < 11; i++){
   bank_account += i;
 }
-console.log(bank_account)
+console.log(bank_account);
 bank_account = 0;
 for(let i = 1; i < 101; i++){
   bank_account += i;
 }
 bank_account *= 2
-console.log(bank_account)
+console.log(bank_account);
 ///III.
 //A.
 //1. The things in an array are called indexes
@@ -99,39 +99,39 @@ console.log(bank_account)
 //B.
 quotes = ["these",
 "are",
-"quotes"]
+"quotes"];
 //C.
-const randomThings = [1, 10, "Hello", true]
-randomThings[0]
-randomThings[2] = "World"
-console.log(randomThings[2])
+const randomThings = [1, 10, "Hello", true];
+randomThings[0];
+randomThings[2] = "World";
+console.log(randomThings[2]);
 //D.
-const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
-ourClass[2]
-ourClass[4] = "Octocat"
-ourClass.push("Cloud City")
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+ourClass[2];
+ourClass[4] = "Octocat";
+ourClass.push("Cloud City");
 //E.
-const myArray = [5, 10, 500, 20]
-myArray.push("Aegon","another string of my choice")
-myArray.shift()
-myArray.unshift("Bob Marley")
-myArray.pop()
-myArray.reverse()
+const myArray = [5, 10, 500, 20];
+myArray.push("Aegon","another string of my choice");
+myArray.shift();
+myArray.unshift("Bob Marley");
+myArray.pop();
+myArray.reverse();
 //I did mutate the array. Mutate means change the original. It returns a reference to the array
 //F.
-let variableForSectionF = 1
+let variableForSectionF = 1;
 if (variableForSectionF < 100){
-  console.log("little number")
+  console.log("little number");
 } else if (variableForSectionF >= 100){
-  console.log("big number")
+  console.log("big number");
 }
 //G.
 if (variableForSectionF < 5){
-  console.log("little number")
+  console.log("little number");
 } else if (variableForSectionF > 10){
-  console.log("big number")
+  console.log("big number");
 } else {
-  console.log("monkey")
+  console.log("monkey");
 }
 //H.
 const kristynsCloset = [
@@ -165,14 +165,14 @@ const thomsCloset = [
   ]
 ];
 
-console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
-kristynsCloset.splice(6,0,"raybans")
-kristynsCloset[5] = "stained knit hat"
-thomsCloset[0][0]
-thomsCloset[1][0]
-thomsCloset[2][0]
-console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}!`)
-thomsCloset[1][2] = "Footie Pajamas"
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+kristynsCloset.splice(6,0,"raybans");
+kristynsCloset[5] = "stained knit hat";
+thomsCloset[0][0];
+thomsCloset[1][0];
+thomsCloset[2][0];
+console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}!`);
+thomsCloset[1][2] = "Footie Pajamas";
 //IV
 //A.
 //What a sassy question, I will do it regardless
@@ -189,53 +189,53 @@ console.log(printCool("Captain Reynolds"));
 const calcCube = (num) => {
   return (num ** 3);
 }
-console.log(calcCube(3))
+console.log(calcCube(3));
 //D.
 const isVowel = (char) => {
   if (typeof(char) === "string"){
-  char = char.toLowerCase()
+  char = char.toLowerCase();
   if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y"){
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 }
-console.log(isVowel("e"))
-console.log(isVowel("f"))
-console.log(isVowel("A"))
-console.log(isVowel("i"))
-console.log(isVowel("O"))
-console.log(isVowel("u"))
-console.log(isVowel("Y"))
-console.log(isVowel(1))
-console.log(isVowel("test"))
+console.log(isVowel("e"));
+console.log(isVowel("f"));
+console.log(isVowel("A"));
+console.log(isVowel("i"));
+console.log(isVowel("O"));
+console.log(isVowel("u"));
+console.log(isVowel("Y"));
+console.log(isVowel(1));
+console.log(isVowel("test"));
 //E.
 const getTwoLengths = (string1, string2) => {
   if(typeof(string1) === "string" && typeof(string2) === "string"){
-    return [string1.length, string2.length]
+    return [string1.length, string2.length];
   }
 }
 //F.
 const getMultipleLengths = (stringArray) => {
-  result = stringArray.map(el => el.length)
-  return result
+  result = stringArray.map(el => el.length);
+  return result;
 }
 //G.
 const maxOfThree = (num1, num2, num3) => {
-  var largest = num1
+  var largest = num1;
   if (largest < num2){
-    var largest = num2
+    var largest = num2;
   } 
   if (largest < num3){
-    var largest = num3
+    var largest = num3;
   }
-  return largest
+  return largest;
 }
 console.log(maxOfThree(9, 6, 1));
 //H.
 const printLongestWord = (stringArray) =>{
-  lengthArray = stringArray.map(el => el.length)
+  lengthArray = stringArray.map(el => el.length);
   return stringArray[lengthArray.findIndex(el => el === Math.max(...lengthArray))]
 }
 //Objects? Which is V
@@ -245,69 +245,69 @@ user = {
   email: "tom@tom.com",
   age: 66,
   purchased: []
-}
+};
 //B.
-user.email = "tom@gmail.com"
-user.age++
+user.email = "tom@gmail.com";
+user.age++;
 //C.
-user.location = "townsburg"
+user.location = "townsburg";
 //D.
-user.purchased.push("carbohydrates")
-user.purchased.push("peace of mind")
-user.purchased.push("Merino jodhpurs")
-console.log(user.purchased[2])
+user.purchased.push("carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+console.log(user.purchased[2]);
 //E.
 user.friend = {
   name: "Grace Hopper",
   age: 85,
   location: "townsburg",
   purchased: []
-}
-console.log(user.friend.name)
-console.log(user.friend.location)
-user.friend.age = 55
-user.friend.purchased.push("The One Ring")
-user.friend.purchased.push("A latte")
-console.log(user.friend.purchased[1])
+};
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("A latte");
+console.log(user.friend.purchased[1]);
 //F.
 for (let i = 0; i < user.purchased.length; i++){
-  console.log(user.purchased[i])
+  console.log(user.purchased[i]);
 }
 for (let i = 0; i < user.friend.purchased.length; i++){
-  console.log(user.friend.purchased[i])
+  console.log(user.friend.purchased[i]);
 }
 const updateUser = () => {
-  user.age++
-  user.name.toUpperCase()
+  user.age++;
+  user.name.toUpperCase();
 }
 const oldAndLoud = (person) => {
   person.age++;
   person.name = person.name.toUpperCase();
 }
-oldAndLoud(user)
+oldAndLoud(user);
 //Cat Bonus
 //1.
 cat1 = {
   name: "kitty",
   breed: "calico",
   age: 5
-}
-console.log(cat1.age)
-console.log(cat1.breed)
+};
+console.log(cat1.age);
+console.log(cat1.breed);
 //2.
 cat2 = {
   name: "tom",
   breed: "mix",
   age: 10
-}
+};
 //3.
 const combineCats = (cat1, cat2) => {
   comboCat = {
     name: cat1.name + cat2.name,
     age: 1,
     breed: `${cat1.breed}-${cat2.breed}`
-  }
-  return comboCat
+  };
+  return comboCat;
 }
 //4.
 console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
