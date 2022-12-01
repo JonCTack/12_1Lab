@@ -175,3 +175,77 @@ thomsCloset[2][0]
 console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}!`)
 thomsCloset[1][2] = "Footie Pajamas"
 //IV
+//A.
+//What a sassy question, I will do it regardless
+const printGreeting = (name) =>{
+  return `Hello there, ${name}!`;
+}
+console.log(printGreeting("Slimer"));
+//B.
+const printCool = (name) =>{
+  return `${name} is cool`;
+}
+console.log(printCool("Captain Reynolds"));
+//C.
+const calcCube = (num) => {
+  return (num ** 3);
+}
+console.log(calcCube(3))
+//D.
+const isVowel = (char) => {
+  if (typeof(char) === "string"){
+  char = char.toLowerCase()
+  if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y"){
+    return true
+  } else {
+    return false
+  }
+}
+}
+console.log(isVowel("e"))
+console.log(isVowel("f"))
+console.log(isVowel("A"))
+console.log(isVowel("i"))
+console.log(isVowel("O"))
+console.log(isVowel("u"))
+console.log(isVowel("Y"))
+console.log(isVowel(1))
+console.log(isVowel("test"))
+//E.
+const getTwoLengths = (string1, string2) => {
+  if(typeof(string1) === "string" && typeof(string2) === "string"){
+    return [string1.length, string2.length]
+  }
+}
+//F.
+const getMultipleLengths = (stringArray) => {
+  result = stringArray.map(el => el.length)
+  return result
+}
+//G.
+const maxOfThree = (num1, num2, num3) => {
+  var largest = num1
+  if (largest < num2){
+    var largest = num2
+  } 
+  if (largest < num3){
+    var largest = num3
+  }
+  return largest
+}
+console.log(maxOfThree(9, 6, 1));
+//H.
+const printLongestWord = (stringArray) =>{
+  lengthArray = stringArray.map(el => el.length)
+  return stringArray[lengthArray.findIndex(el => el === Math.max(...lengthArray))]
+}
+//Objects? Which is V
+//A.
+user = {
+  name: "tom",
+  email: "tom@tom.com",
+  age: "66",
+  purchased: []
+}
+//B.
+
