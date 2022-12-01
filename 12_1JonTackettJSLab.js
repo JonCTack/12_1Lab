@@ -286,3 +286,29 @@ const oldAndLoud = (person) => {
   person.name = person.name.toUpperCase();
 }
 oldAndLoud(user)
+//Cat Bonus
+//1.
+cat1 = {
+  name: "kitty",
+  breed: "calico",
+  age: 5
+}
+console.log(cat1.age)
+console.log(cat1.breed)
+//2.
+cat2 = {
+  name: "tom",
+  breed: "mix",
+  age: 10
+}
+//3.
+const combineCats = (cat1, cat2) => {
+  comboCat = {
+    name: cat1.name + cat2.name,
+    age: 1,
+    breed: `${cat1.breed}-${cat2.breed}`
+  }
+  return comboCat
+}
+//4.
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
