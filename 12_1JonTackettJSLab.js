@@ -1,8 +1,8 @@
 //A.
 // 1. we can use commands such as "let"
-// 2. we can use "="
-// 3. we can assign with "="
-// 4. declare is creating a variable, assign is giving a value to a variable, and define is giving input to a variable or function, or ensuring it's not undefined 
+// 2. we can use "=" to change the value
+// 3. we can assign with "=" by setting the variables equal to each other
+// 4. declare is creating a variable or having it written (thisFunction()), assign is giving a value to a variable, and define is giving input to a variable or function, or ensuring it's not undefined 
 // 5. pseudocoding is labeling the steps neceissary in a code in simple writing such as "first, we need to compare the values"
 // 6. the large percentage should be spent thinking instead of typing it
 //B. 
@@ -13,13 +13,13 @@ secondVariable = "any string";
 //the value of firstVariable is 6
 let yourName = "Jonathan Tackett";
 let greet = `Hello, my name is ` + yourName;
-//
+// C.
 const a = 4;
   const b = 53;
   const c = 57;
   const d = 16;
   const e = 'Kevin';
-//C. print true
+
   console.log(a < b);
   console.log(c > d);
   console.log('Name' === 'Name');
@@ -48,12 +48,15 @@ if (personAge >= 16){
 }
 //II
 //A.
+//1.
 for(let i = 0; i < 11; i++){
   console.log(i);
 }
+//2.
 for(let i = 10; i < 401; i++){
   console.log(i);
 }
+//3.
 for(let i = 4; i < 1334; i++){
   console.log(i*3);
 }
@@ -66,11 +69,13 @@ for(let i = 1; i < 101; i++){
 }
 }
 //C.
+//1.
 for(let i = 0; i < 101; i++){
   if(i%5 == 0 && i != 0){
     console.log(`I found a ${i}. High five!`);
   }
 }
+//2.
 for(let i = 0; i < 101; i++){
   if(i%5 == 0 && i != 0){
     console.log(`I found a ${i}. High five!`);
@@ -80,11 +85,13 @@ for(let i = 0; i < 101; i++){
   }
 }
 //D.
+//1.
 let bank_account = 0;
 for(let i = 1; i < 11; i++){
   bank_account += i;
 }
 console.log(bank_account);
+//2.
 bank_account = 0;
 for(let i = 1; i < 101; i++){
   bank_account += i;
@@ -95,27 +102,39 @@ console.log(bank_account);
 //A.
 //1. The things in an array are called indexes
 //2. Indexes are in order
-//3. You can model a list with an array
+//3. You can model a list with an array or a parking garage
 //B.
+//1.
 quotes = ["these",
 "are",
 "quotes"];
 //C.
 const randomThings = [1, 10, "Hello", true];
+//1.
 randomThings[0];
+//2.
 randomThings[2] = "World";
+//3.
 console.log(randomThings[2]);
 //D.
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+//1.
 ourClass[2];
+//2.
 ourClass[4] = "Octocat";
+//3.
 ourClass.push("Cloud City");
 //E.
 const myArray = [5, 10, 500, 20];
+//1.
 myArray.push("Aegon","another string of my choice");
+//2.
 myArray.shift();
+//3.
 myArray.unshift("Bob Marley");
+//4.
 myArray.pop();
+//5.
 myArray.reverse();
 //I did mutate the array. Mutate means change the original. It returns a reference to the array
 //F.
@@ -126,6 +145,7 @@ if (variableForSectionF < 100){
   console.log("big number");
 }
 //G.
+//1.,2.,3.
 if (variableForSectionF < 5){
   console.log("little number");
 } else if (variableForSectionF > 10){
@@ -164,14 +184,21 @@ const thomsCloset = [
     "raybans"
   ]
 ];
-
+//1.
 console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+//2.
 kristynsCloset.splice(6,0,"raybans");
+//3.
 kristynsCloset[5] = "stained knit hat";
+//4.
 thomsCloset[0][0];
+//5.
 thomsCloset[1][0];
+//6.
 thomsCloset[2][0];
+//7.
 console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}!`);
+//8.
 thomsCloset[1][2] = "Footie Pajamas";
 //IV
 //A.
@@ -233,13 +260,16 @@ const maxOfThree = (num1, num2, num3) => {
   return largest;
 }
 console.log(maxOfThree(9, 6, 1));
+//I did initially use Math.max(), whoopsy
 //H.
 const printLongestWord = (stringArray) =>{
   lengthArray = stringArray.map(el => el.length);
   return stringArray[lengthArray.findIndex(el => el === Math.max(...lengthArray))]
 }
+//This does return the first word of max length in the array
 //Objects? Which is V
 //A.
+//1.,2.
 user = {
   name: "tom",
   email: "tom@tom.com",
@@ -247,39 +277,58 @@ user = {
   purchased: []
 };
 //B.
+//1.
 user.email = "tom@gmail.com";
+//2.
 user.age++;
 //C.
+//1.
 user.location = "townsburg";
 //D.
+//1.
 user.purchased.push("carbohydrates");
+//2.
 user.purchased.push("peace of mind");
+//3.
 user.purchased.push("Merino jodhpurs");
+//4.
 console.log(user.purchased[2]);
 //E.
+//1.
 user.friend = {
   name: "Grace Hopper",
   age: 85,
   location: "townsburg",
   purchased: []
 };
+//2.
 console.log(user.friend.name);
+//3.
 console.log(user.friend.location);
+//4.
 user.friend.age = 55;
+//5.
 user.friend.purchased.push("The One Ring");
+//6.
 user.friend.purchased.push("A latte");
+//7.
 console.log(user.friend.purchased[1]);
 //F.
+//1.
 for (let i = 0; i < user.purchased.length; i++){
   console.log(user.purchased[i]);
 }
+//2.
 for (let i = 0; i < user.friend.purchased.length; i++){
   console.log(user.friend.purchased[i]);
 }
+//G.
+//1.,2.,3.
 const updateUser = () => {
   user.age++;
   user.name.toUpperCase();
 }
+//2.? 4.?
 const oldAndLoud = (person) => {
   person.age++;
   person.name = person.name.toUpperCase();
